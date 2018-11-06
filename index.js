@@ -53,6 +53,10 @@ app.get("/mysite", (req, resp)=>{
   
 });
 
+app.get("/getItems", (req, resp)=>{
+  resp.json(["item1", "item2", "item3"]);
+})
+
 app.listen(port, (err)=>{
   if(err){
     console.log(err);
