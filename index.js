@@ -54,7 +54,28 @@ app.get("/mysite", (req, resp)=>{
 });
 
 app.get("/getItems", (req, resp)=>{
-  resp.json(["item1", "item2", "item3"]);
+  
+  var arr = [
+    {
+      title:"Place1",
+      desc:"desc1",
+      x:50,
+      y:42
+    },
+    {
+      title:"Place2",
+      desc:"desc2",
+      x:150,
+      y:142
+    },
+    {
+      title:"Place3",
+      desc:"desc3",
+      x:250,
+      y:242
+    }
+  ]
+  resp.json(arr);
 })
 
 app.listen(port, (err)=>{
