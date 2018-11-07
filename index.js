@@ -54,7 +54,7 @@ app.get("/mysite", (req, resp)=>{
 });
 
 app.get("/getItems", (req, resp)=>{
-  resp.end("Hi you all");
+  resp.json(["item1","item2","item3"]);
 })
 
 app.listen(port, (err)=>{
