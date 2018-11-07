@@ -54,28 +54,7 @@ app.get("/mysite", (req, resp)=>{
 });
 
 app.get("/getItems", (req, resp)=>{
-  
-  var arr = [
-    {
-      title:"Place1",
-      desc:"desc1",
-      x:50,
-      y:42
-    },
-    {
-      title:"Place2",
-      desc:"desc2",
-      x:150,
-      y:142
-    },
-    {
-      title:"Place3",
-      desc:"desc3",
-      x:250,
-      y:242
-    }
-  ]
-  resp.json(arr);
+  resp.end("Hi you all");
 })
 
 app.listen(port, (err)=>{
